@@ -1,0 +1,54 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 6.2rem;
+  background-color: #fff;
+  border-bottom: solid 1px var(--grey-border);
+}
+
+.Navbar__info {
+  display: flex;
+  width: 37rem;
+  column-gap: 3rem;
+}
+
+.Navbar__title {
+  font-family: var(--Montserrat);
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.Navbar__list {
+  display: flex;
+  list-style: none;
+  column-gap: 2.5rem;
+  align-items: center;
+}
+
+.Navbar__listItem a {
+  text-decoration: none;
+  font-family: var(--Montserrat);
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  opacity: 0.5;
+  color: var(--black-two);
+}
+
+.Navbar__userButton {
+  background-color: transparent;
+  width: 2.813rem;
+  height: 2.813rem;
+  border: solid 1px var(--grey-border);
+  border-radius: 50%;
+}
