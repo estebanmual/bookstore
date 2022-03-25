@@ -46,7 +46,6 @@
 
   - Run  `npm install` on the root directory of your project
 
-
 ### Usage
 
   - `npm start` Runs the app in the development mode.
