@@ -39,13 +39,15 @@
 
   - Open terminal
   - Change the directory then run the following:
-    - Run `git clone git@github.com:estebanmual/bookstore.git`
+    - `git clone git@github.com:estebanmual/bookstore.git`
   - cd repo-name/
 
+### Install
+
+  - Run  `npm install` on the root directory of your project
 
 ### Usage
 
-  - `npm install` on the root directory of your project
   - `npm start` Runs the app in the development mode.
   - Open http://localhost:3000 to view it in your browser.
 

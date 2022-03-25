@@ -1,0 +1,102 @@
+.Book {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  border-radius: 4px;
+  border: solid 1px var(--grey_border);
+  background-color: #fff;
+}
+
+.Book__info__genre {
+  opacity: 0.5;
+  font-family: var(--Montserrat);
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black_two);
+}
+
+.Book__info__title {
+  font-family: (var(--Roboto));
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--black_two);
+}
+
+.Book__info__author {
+  font-family: var(--Roboto);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool_blue);
+}
+
+.Book__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Book__buttons button {
+  background-color: transparent;
+  border: none;
+  height: 1.5rem;
+  font-family: var(--Roboto);
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--cool_blue);
+}
+
+hr {
+  color: var(--grey_border);
+}
+
+.Book__rightInfo {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.Book__completed {
+  display: flex;
+}
+
+.Book_numberCompleted {
+  font-family: var(--Montserrat);
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black_two);
+}
+
+.Book_completedText {
+  opacity: 0.5;
+  font-family: var(--Montserrat);
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black_two);
+}
+
+.Book__rightLine {
+  height: 4rem;
+}
