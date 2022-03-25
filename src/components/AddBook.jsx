@@ -4,14 +4,15 @@ function AddBook() {
   return (
     <div>
       <h2>ADD NEW BOOK</h2>
-      <div>
+      <form>
         <input type="text" placeholder="Book title" />
+        <input type="text" placeholder="Author" />
         <input type="text" multiple list="drawCategories" placeholder="Category" />
         <datalist id="drawCategories">
           <option>Action</option>
         </datalist>
-        <button type="button">ADD BOOK</button>
-      </div>
+        <button type="submit">ADD BOOK</button>
+      </form>
     </div>
   );
 }
