@@ -1,16 +1,21 @@
 import { ADD_BOOK, DELETE_BOOK } from '../../constants';
 
 const newBook = (action) => {
-  const { categorie, title, author } = action;
+  const { title, author } = action;
   return {
+    categorie: null,
     title,
-    categorie,
     author,
+    completed: '0%',
+    chapter: '0',
     id: Math.floor(Math.random() * 999999),
   };
 };
 
-const removeBook = (state = [], id) => (state.filter((book) => book.id !== id));
+const removeBook = (state = [], action) => {
+  const books = state.filter((book) => book.id !== action.id);
+  return books;
+};
 
 // Reducer
 export default function booksReducer(state = [], action) {
@@ -29,9 +34,8 @@ export default function booksReducer(state = [], action) {
 
 // Action Creators
 
-export const addBook = (categorie, title, author) => ({
+export const addBook = ({ title, author }) => ({
   type: ADD_BOOK,
-  categorie,
   title,
   author,
 });
