@@ -1,22 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
 import style from '../styling/Book.module.css';
+import { deleteBook } from '../redux/books/books';
 
 function Book({
-  genre, title, author, completed, chapter,
+  categorie, title, author, completed, chapter, id,
 }) {
+  const dispatch = useDispatch();
   return (
     <div className={style.Book}>
       <div className={style.Book__leftInfo}>
         <div className={style.Book_info}>
-          <p className={style.Book__info__genre}>{genre}</p>
+          <p className={style.Book__info__genre}>{categorie}</p>
           <p className={style.Book__info__title}>{title}</p>
           <p className={style.Book__info__author}>{author}</p>
         </div>
         <div className={style.Book__buttons}>
           <button type="button">Comments</button>
           <hr />
-          <button type="button">Remove</button>
+          <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch(deleteBook({ id }));
+            }}
+          >
+            Remove
+
+          </button>
           <hr />
           <button type="button">Edit</button>
         </div>
@@ -43,17 +55,19 @@ function Book({
 export default Book;
 
 Book.defaultProps = {
-  genre: '',
+  categorie: '',
   title: '',
   author: '',
   completed: '',
   chapter: '',
+  id: '',
 };
 
 Book.propTypes = {
-  genre: PropTypes.string,
+  categorie: PropTypes.string,
   title: PropTypes.string,
   author: PropTypes.string,
   completed: PropTypes.string,
   chapter: PropTypes.string,
+  id: PropTypes.number,
 };
