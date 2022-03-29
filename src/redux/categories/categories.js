@@ -5,7 +5,6 @@ import { STATUS_CATEGORIES } from '../../constants';
 export default function categoriesReducer(state = {}, action) {
   switch (action.type) {
     case STATUS_CATEGORIES:
-      console.log('Under construction');
       return 'Under construction';
     default:
       return state;
