@@ -1,19 +1,15 @@
-import { combineReducers, createStore } from 'redux';
+import {
+  combineReducers, createStore, applyMiddleware, compose,
+} from 'redux';
+import thunk from 'redux-thunk';
 import booksReducer from './books/books';
 import categoriesReducer from './categories/categories';
 
-const initialData = {
-  books: [{
-    categorie: 'Action',
-    title: 'The Hunger Games',
-    author: 'Suzanne Collins',
-    completed: '64%',
-    chapter: 'Chapter 17',
-    id: 1,
-  }],
-};
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+/* eslint-disable no-underscore-dangle */
 
 const rootReducer = combineReducers({ books: booksReducer, categories: categoriesReducer });
-const store = createStore(rootReducer, initialData);
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
 
 export default store;

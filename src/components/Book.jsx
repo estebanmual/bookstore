@@ -5,14 +5,14 @@ import style from '../styling/Book.module.css';
 import { deleteBook } from '../redux/books/books';
 
 function Book({
-  categorie, title, author, completed, chapter, id,
+  category, title, author, id,
 }) {
   const dispatch = useDispatch();
   return (
     <div className={style.Book}>
       <div className={style.Book__leftInfo}>
         <div className={style.Book_info}>
-          <p className={style.Book__info__genre}>{categorie}</p>
+          <p className={style.Book__info__genre}>{category}</p>
           <p className={style.Book__info__title}>{title}</p>
           <p className={style.Book__info__author}>{author}</p>
         </div>
@@ -37,14 +37,14 @@ function Book({
         <div className={style.Book__completed}>
           <p>circle</p>
           <div>
-            <p className={style.Book_numberCompleted}>{completed}</p>
+            <p className={style.Book_numberCompleted}>0%</p>
             <p className={style.Book_completedText}>Completed</p>
           </div>
         </div>
         <hr className={style.Book__rightLine} />
         <div>
           <p>Current Chapter</p>
-          <p>{chapter}</p>
+          <p>0</p>
           <button type="button">Update Progress</button>
         </div>
       </div>
@@ -55,19 +55,15 @@ function Book({
 export default Book;
 
 Book.defaultProps = {
-  categorie: '',
+  category: '',
   title: '',
   author: '',
-  completed: '',
-  chapter: '',
   id: '',
 };
 
 Book.propTypes = {
-  categorie: PropTypes.string,
+  category: PropTypes.string,
   title: PropTypes.string,
   author: PropTypes.string,
-  completed: PropTypes.string,
-  chapter: PropTypes.string,
-  id: PropTypes.number,
+  id: PropTypes.string,
 };
