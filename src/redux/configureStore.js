@@ -13,7 +13,10 @@ const initialData = {
   }],
 };
 
+/* eslint-disable no-underscore-dangle */
+
 const rootReducer = combineReducers({ books: booksReducer, categories: categoriesReducer });
-const store = createStore(rootReducer, initialData);
+const store = createStore(rootReducer, initialData,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 export default store;
