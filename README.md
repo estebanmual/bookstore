@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link]('https://bookstore-estebanmual.netlify.app/')
+[Live Demo Link](https://bookstore-estebanmual.netlify.app/)
 
 
 ## Authors
