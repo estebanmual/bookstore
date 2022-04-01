@@ -1,5 +1,6 @@
 .AddBook {
-  margin: 2rem 7%;
+  max-width: 100%;
+  padding: 2rem 7%;
 }
 
 .AddBook__title {
@@ -35,6 +36,7 @@
   letter-spacing: -0.15px;
   color: var(--black_two);
   padding-left: 1rem;
+  max-width: 25%;
 }
 
 .AddBook__input::placeholder {
@@ -53,13 +55,19 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 0.5px;
-  flex-grow: 1;
+  flex: 1;
+  max-width: 15%;
 }
 
 .AddBook__inputTitle {
-  flex-grow: 3;
+  flex: 3;
 }
 
 .AddBook__inputAuthor {
-  flex-grow: 1.5;
+  flex: 1.5;
+}
+
+.AddBook__categoryOptions {
+  height: 50px !important;
+  overflow-y: scroll !important;
 }

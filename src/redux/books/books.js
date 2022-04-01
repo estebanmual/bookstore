@@ -44,9 +44,8 @@ export default function booksReducer(state = [], action) {
 
 // Action Creators
 
-export const addBook = ({ title, author }) => async (dispatch) => {
+export const addBook = ({ title, author, category }) => async (dispatch) => {
   const id = Math.floor(Math.random() * 999999);
-  const category = null;
   await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/nAUexoOzqDCbOkZQelNJ/books', {
     method: 'POST',
     headers: {
