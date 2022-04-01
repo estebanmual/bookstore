@@ -1,0 +1,73 @@
+.AddBook {
+  max-width: 100%;
+  padding: 2rem 7%;
+}
+
+.AddBook__title {
+  font-family: var(--Montserrat);
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: var(--warm-grey);
+  margin-bottom: 1rem;
+}
+
+.AddBook__form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  column-gap: 22px;
+}
+
+.AddBook__input {
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px var(--grey-border);
+  background-color: #fff;
+  font-family: var(--Montserrat);
+  font-size: 1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: var(--black_two);
+  padding-left: 1rem;
+  max-width: 25%;
+}
+
+.AddBook__input::placeholder {
+  color: var(--pinkish-grey);
+}
+
+.AddBook__button {
+  border-radius: 3px;
+  background-color: var(--azure);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  font-family: var(--Roboto);
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  flex: 1;
+  max-width: 15%;
+}
+
+.AddBook__inputTitle {
+  flex: 3;
+}
+
+.AddBook__inputAuthor {
+  flex: 1.5;
+}
+
+.AddBook__categoryOptions {
+  height: 50px !important;
+  overflow-y: scroll !important;
+}
