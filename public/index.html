@@ -23,4 +23,25 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <!-- <script>
+    window.onload = async function() {
+      const progressCircle = document.getElementById('circular-progress');
+      console.log(progressCircle);
+
+      let progressValue = 0;
+      const progressEndValue = 65;
+      const speed = 50000;
+
+      const progress = setInterval(() => {
+        progressValue += 1;
+        progressCircle.style.background = `conic-gradient(
+            #4d5bf9 ${progressValue * 3.6}deg,
+            #cadcff ${progressValue * 3.6}deg
+        )`;
+        if (progressValue === progressEndValue) {
+          clearInterval(progress);
+        }
+      }, speed);
+    };
+  </script> -->
 </html>

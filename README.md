@@ -13,9 +13,9 @@
 - Jest
 - JavaScript
 
-## Live Demo (not available)
+## Live Demo
 
-[Live Demo Link]('')
+[Live Demo Link](https://bookstore-estebanmual.netlify.app/)
 
 
 ## Authors
