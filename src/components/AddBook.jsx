@@ -9,7 +9,7 @@ function AddBook() {
   const [category, setCategory] = useState();
   const dispatch = useDispatch();
 
-  const categories = ['Fantasy', 'Adventure', 'Romance', 'Contemporary', 'Dystopian', 'Mystery', 'Horror', 'Thriller', 'Paranomal', 'Historical Fiction', 'Memoir', 'Cooking', 'Art', 'Self-help', 'Development', 'Motivational', 'Health', 'History', 'Travel', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor', 'Humor'];
+  const categories = ['Fantasy', 'Adventure', 'Romance', 'Contemporary', 'Dystopian', 'Mystery', 'Horror', 'Thriller', 'Paranomal', 'Historical Fiction', 'Memoir', 'Cooking', 'Art', 'Self-help', 'Development', 'Motivational', 'Health', 'History', 'Travel', 'Humor'];
 
   const categoriesOrd = categories.sort((a, b) => {
     if (a < b) { return -1; }
